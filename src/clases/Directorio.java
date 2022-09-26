@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeSet;
 import javax.swing.JOptionPane;
-import main.Main;
 
 public class Directorio {
 

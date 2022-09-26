@@ -3,7 +3,6 @@ package clases;
 
 import java.util.Objects;
 
-import static main.Main.sc;
 
 public class Cliente implements Comparable<Cliente>{
     private String dni;
