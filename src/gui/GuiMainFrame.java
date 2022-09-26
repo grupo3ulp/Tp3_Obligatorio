@@ -7,9 +7,9 @@ import java.util.TreeSet;
 import javax.swing.JOptionPane;
 import main.Main;
 
-public class MainFrame extends javax.swing.JFrame {
+public class GuiMainFrame extends javax.swing.JFrame {
 
-    public MainFrame() {
+    public GuiMainFrame() {
         initComponents();
         this.setResizable(false); 
     }
@@ -193,7 +193,7 @@ public class MainFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void agregarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarClienteActionPerformed
-        AgregarCliente agregar = new AgregarCliente();
+        GuiAgregarCliente agregar = new GuiAgregarCliente();
         agregar.setVisible(true);
         agregar.setLocationRelativeTo(null);
         dispose();

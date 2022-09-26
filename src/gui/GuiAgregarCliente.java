@@ -3,9 +3,9 @@ package gui;
 import javax.swing.JOptionPane;
 import main.Main;
 
-public class AgregarCliente extends javax.swing.JFrame {
+public class GuiAgregarCliente extends javax.swing.JFrame {
 
-    public AgregarCliente() {
+    public GuiAgregarCliente() {
         initComponents();
          this.setResizable(false); 
     }
@@ -109,12 +109,11 @@ public class AgregarCliente extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(nombre, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(apellido, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
-                                .addComponent(dni)
-                                .addComponent(direccion)
-                                .addComponent(ciudad)
-                                .addComponent(telefono)))
+                            .addComponent(apellido, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
+                            .addComponent(dni)
+                            .addComponent(direccion)
+                            .addComponent(ciudad)
+                            .addComponent(telefono))
                         .addContainerGap())))
         );
         jPanel2Layout.setVerticalGroup(
@@ -203,7 +202,7 @@ public class AgregarCliente extends javax.swing.JFrame {
     }//GEN-LAST:event_limpiarActionPerformed
 
     private void volverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_volverActionPerformed
-        MainFrame mainF = new MainFrame();
+        GuiMainFrame mainF = new GuiMainFrame();
         mainF.setVisible(true);
         mainF.setLocationRelativeTo(null);
         dispose();

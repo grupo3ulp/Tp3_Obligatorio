@@ -1,7 +1,7 @@
 package main;
 import clases.Cliente;
 import clases.Directorio;
-import gui.MainFrame;
+import gui.GuiMainFrame;
 
 import java.util.Scanner;
 public class Main {
@@ -15,7 +15,7 @@ public class Main {
         dir.getDIRECTORIO().put("3333", new Cliente("17687684", "Cristina", "Gonzalez", "Rincon", "PPPP 33"));
         dir.getDIRECTORIO().put("4444", new Cliente("17687684", "Cristina", "Gonzalez", "Rincon", "PPPP 33"));
         
-        MainFrame mainF= new MainFrame();
+        GuiMainFrame mainF= new GuiMainFrame();
         mainF.setVisible(true);
         mainF.setLocationRelativeTo(null);
     }
