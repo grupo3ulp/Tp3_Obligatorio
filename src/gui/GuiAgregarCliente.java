@@ -1,5 +1,6 @@
 package gui;
 
+import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 import main.Main;
 
@@ -7,7 +8,8 @@ public class GuiAgregarCliente extends javax.swing.JFrame {
 
     public GuiAgregarCliente() {
         initComponents();
-         this.setResizable(false); 
+        this.setResizable(false);
+        btnGuardar.setEnabled(false);
     }
 
     @SuppressWarnings("unchecked")
@@ -52,6 +54,48 @@ public class GuiAgregarCliente extends javax.swing.JFrame {
         jLTel.setFont(new java.awt.Font("Source Sans Pro Semibold", 0, 24)); // NOI18N
         jLTel.setText("Telefono");
 
+        txtNombre.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtNombreKeyReleased(evt);
+            }
+        });
+
+        txtApellido.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtApellidoKeyReleased(evt);
+            }
+        });
+
+        txtDni.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtDniKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtDniKeyTyped(evt);
+            }
+        });
+
+        txtDireccion.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtDireccionKeyReleased(evt);
+            }
+        });
+
+        txtCiudad.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtCiudadKeyReleased(evt);
+            }
+        });
+
+        txtTelefono.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtTelefonoKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtTelefonoKeyTyped(evt);
+            }
+        });
+
         jLTitulo.setFont(new java.awt.Font("Source Serif Pro Semibold", 1, 48)); // NOI18N
         jLTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLTitulo.setIcon(new javax.swing.ImageIcon("D:\\Documentos\\ULP\\2do Cuatrimestre\\Laboratorio 1\\Proyectos\\Tp3_Obligatorio\\img\\square-plus-solid-big.png")); // NOI18N
@@ -75,6 +119,7 @@ public class GuiAgregarCliente extends javax.swing.JFrame {
 
         btnGuardar.setIcon(new javax.swing.ImageIcon("D:\\Documentos\\ULP\\2do Cuatrimestre\\Laboratorio 1\\Proyectos\\Tp3_Obligatorio\\img\\floppy-disk-solid.png")); // NOI18N
         btnGuardar.setText("Guardar");
+        btnGuardar.setEnabled(false);
         btnGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGuardarActionPerformed(evt);
@@ -171,26 +216,43 @@ public class GuiAgregarCliente extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+@Override
+    public void processKeyEvent(KeyEvent ev) {
+        if (Character.isDigit(ev.getKeyChar())) {
+            super.processKeyEvent(ev);
+        }
+        ev.consume();
+        return;
+    }
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
         boolean flag = Main.getDir().agregarCliente(txtTelefono.getText(), txtDni.getText(), txtNombre.getText(),
-                txtApellido.getText(), txtCiudad.getText(), txtDireccion.getText());
-        
-        if (flag) {
-            JOptionPane.showMessageDialog(null, "Cliente agregado corectamente");
-        } else {
-            JOptionPane.showMessageDialog(null, "No se pudo "
-                    + "agregar al cliente por que ya existe uno con ese numero de telefono");
-        }
+                    txtApellido.getText(), txtCiudad.getText(), txtDireccion.getText());
+            if (flag) {
+                JOptionPane.showMessageDialog(null, "Cliente agregado corectamente");
+            } else {
+                JOptionPane.showMessageDialog(null, "No se pudo "
+                        + "agregar al cliente por que ya existe uno con ese numero de telefono");
+            }
 
-        txtNombre.setText(" ");
-        txtApellido.setText(" ");
-        txtDni.setText(" ");
-        txtDireccion.setText(" ");
-        txtCiudad.setText(" ");
-        txtTelefono.setText(" ");
+            txtNombre.setText("");
+            txtApellido.setText("");
+            txtDni.setText("");
+            txtDireccion.setText("");
+            txtCiudad.setText("");
+            txtTelefono.setText("");
+
     }//GEN-LAST:event_btnGuardarActionPerformed
 
+    public void habilitarBoton() {
+        if (!txtNombre.getText().isEmpty() && !txtApellido.getText().isEmpty()
+                && !txtCiudad.getText().isEmpty() && !txtDireccion.getText().isEmpty()
+                && !txtDni.getText().isEmpty() && !txtTelefono.getText().isEmpty()) {
+            btnGuardar.setEnabled(true);
+        } else {
+            btnGuardar.setEnabled(false);
+        }
+    }
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
         txtNombre.setText(" ");
         txtApellido.setText(" ");
@@ -208,6 +270,49 @@ public class GuiAgregarCliente extends javax.swing.JFrame {
         dispose();
 
     }//GEN-LAST:event_btnVolverActionPerformed
+
+    private void txtNombreKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNombreKeyReleased
+        habilitarBoton();
+    }//GEN-LAST:event_txtNombreKeyReleased
+
+    private void txtApellidoKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtApellidoKeyReleased
+        habilitarBoton();
+    }//GEN-LAST:event_txtApellidoKeyReleased
+
+    private void txtDniKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDniKeyReleased
+        habilitarBoton();
+    }//GEN-LAST:event_txtDniKeyReleased
+
+    private void txtDireccionKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDireccionKeyReleased
+        habilitarBoton();
+    }//GEN-LAST:event_txtDireccionKeyReleased
+
+    private void txtCiudadKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCiudadKeyReleased
+        habilitarBoton();
+    }//GEN-LAST:event_txtCiudadKeyReleased
+
+    private void txtTelefonoKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTelefonoKeyReleased
+        habilitarBoton();
+    }//GEN-LAST:event_txtTelefonoKeyReleased
+
+    private void txtDniKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDniKeyTyped
+        Character c = evt.getKeyChar();
+        if (!Character.isDigit(c)&&!c.equals('\b')&&!c.equals('\t')&&!c.equals('\n')) {
+            evt.consume();
+            JOptionPane.showMessageDialog(null, "Solo se pueden ingresar numeros en "
+                    + "este campo");
+        }
+    }//GEN-LAST:event_txtDniKeyTyped
+
+    private void txtTelefonoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTelefonoKeyTyped
+        Character c = evt.getKeyChar();
+        if (!Character.isDigit(c)&&!c.equals('\b')&&!c.equals('\t')&&!c.equals('\n')) {
+            evt.consume();                
+            JOptionPane.showMessageDialog(null, "Solo se pueden ingresar numeros en "
+                    + "este campo");
+            txtTelefono.setText(" ");
+        }
+    }//GEN-LAST:event_txtTelefonoKeyTyped
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
