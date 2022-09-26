@@ -11,6 +11,7 @@ public class MainFrame extends javax.swing.JFrame {
 
     public MainFrame() {
         initComponents();
+        this.setResizable(false); 
     }
 
     @SuppressWarnings("unchecked")

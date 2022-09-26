@@ -7,6 +7,7 @@ public class AgregarCliente extends javax.swing.JFrame {
 
     public AgregarCliente() {
         initComponents();
+         this.setResizable(false); 
     }
 
     @SuppressWarnings("unchecked")
