@@ -24,28 +24,28 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+              <Component id="mainPanel" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
               <EmptySpace min="0" pref="20" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="salir" min="-2" pref="248" max="-2" attributes="0"/>
-                  <Component id="agregarCliente" min="-2" pref="248" max="-2" attributes="0"/>
-                  <Component id="borrarCliente" min="-2" pref="248" max="-2" attributes="0"/>
-                  <Component id="buscarClientes" min="-2" pref="248" max="-2" attributes="0"/>
-                  <Component id="buscarTel" alignment="1" min="-2" pref="248" max="-2" attributes="0"/>
-                  <Component id="buscarCliente" alignment="1" min="-2" pref="248" max="-2" attributes="0"/>
-                  <Component id="mostrarClientes" alignment="1" min="-2" pref="248" max="-2" attributes="0"/>
+                  <Component id="btnSalir" min="-2" pref="248" max="-2" attributes="0"/>
+                  <Component id="btnAgregarCliente" min="-2" pref="248" max="-2" attributes="0"/>
+                  <Component id="btnBorrarCliente" min="-2" pref="248" max="-2" attributes="0"/>
+                  <Component id="btnBuscarClientes" min="-2" pref="248" max="-2" attributes="0"/>
+                  <Component id="btnBuscarTel" alignment="1" min="-2" pref="248" max="-2" attributes="0"/>
+                  <Component id="btnBuscarCliente" alignment="1" min="-2" pref="248" max="-2" attributes="0"/>
+                  <Component id="btnMostrarClientes" alignment="1" min="-2" pref="248" max="-2" attributes="0"/>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                      <Component id="jScrollPane1" min="-2" pref="368" max="-2" attributes="0"/>
+                      <Component id="jSpResultado" min="-2" pref="368" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
-                      <Component id="salir1" min="-2" pref="248" max="-2" attributes="0"/>
+                      <Component id="btnLimpiar" min="-2" pref="248" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="20" max="32767" attributes="0"/>
@@ -56,31 +56,31 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace pref="20" max="32767" attributes="0"/>
-              <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+              <Component id="mainPanel" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jScrollPane1" max="32767" attributes="0"/>
+                      <Component id="jSpResultado" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="agregarCliente" min="-2" pref="39" max="-2" attributes="0"/>
+                      <Component id="btnAgregarCliente" min="-2" pref="39" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                      <Component id="buscarCliente" min="-2" pref="39" max="-2" attributes="0"/>
+                      <Component id="btnBuscarCliente" min="-2" pref="39" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                      <Component id="buscarTel" min="-2" pref="39" max="-2" attributes="0"/>
+                      <Component id="btnBuscarTel" min="-2" pref="39" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                      <Component id="buscarClientes" min="-2" pref="39" max="-2" attributes="0"/>
+                      <Component id="btnBuscarClientes" min="-2" pref="39" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                      <Component id="borrarCliente" min="-2" pref="39" max="-2" attributes="0"/>
+                      <Component id="btnBorrarCliente" min="-2" pref="39" max="-2" attributes="0"/>
                       <EmptySpace pref="23" max="32767" attributes="0"/>
-                      <Component id="mostrarClientes" min="-2" pref="39" max="-2" attributes="0"/>
+                      <Component id="btnMostrarClientes" min="-2" pref="39" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="salir1" alignment="0" min="-2" pref="39" max="-2" attributes="0"/>
-                  <Component id="salir" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="btnLimpiar" alignment="0" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="btnSalir" min="-2" pref="39" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="18" max="32767" attributes="0"/>
           </Group>
@@ -88,14 +88,14 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="jPanel2">
+    <Container class="javax.swing.JPanel" name="mainPanel">
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace pref="97" max="32767" attributes="0"/>
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLTiitulo" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -103,14 +103,14 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="jLabel1" min="-2" pref="73" max="-2" attributes="0"/>
+                  <Component id="jLTiitulo" min="-2" pref="73" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="12" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabel1">
+        <Component class="javax.swing.JLabel" name="jLTiitulo">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Source Serif Pro Semibold" size="48" style="1"/>
@@ -124,7 +124,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="agregarCliente">
+    <Component class="javax.swing.JButton" name="btnAgregarCliente">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Source Serif Pro Semibold" size="18" style="0"/>
@@ -135,10 +135,10 @@
         <Property name="text" type="java.lang.String" value="Agregar Cliente"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="agregarClienteActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAgregarClienteActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="buscarCliente">
+    <Component class="javax.swing.JButton" name="btnBuscarCliente">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Source Serif Pro Semibold" size="18" style="0"/>
@@ -149,10 +149,10 @@
         <Property name="text" type="java.lang.String" value="Buscar Cliente"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buscarClienteActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBuscarClienteActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="buscarTel">
+    <Component class="javax.swing.JButton" name="btnBuscarTel">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Source Serif Pro Semibold" size="18" style="0"/>
@@ -163,10 +163,10 @@
         <Property name="text" type="java.lang.String" value="Buscar Telefono"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buscarTelActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBuscarTelActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="buscarClientes">
+    <Component class="javax.swing.JButton" name="btnBuscarClientes">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Source Serif Pro Semibold" size="18" style="0"/>
@@ -177,10 +177,10 @@
         <Property name="text" type="java.lang.String" value="Buscar Clientes"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buscarClientesActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBuscarClientesActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="borrarCliente">
+    <Component class="javax.swing.JButton" name="btnBorrarCliente">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Source Serif Pro Semibold" size="18" style="0"/>
@@ -191,10 +191,10 @@
         <Property name="text" type="java.lang.String" value="Borrar Cliente"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="borrarClienteActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBorrarClienteActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="mostrarClientes">
+    <Component class="javax.swing.JButton" name="btnMostrarClientes">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Source Serif Pro Semibold" size="18" style="0"/>
@@ -205,10 +205,10 @@
         <Property name="text" type="java.lang.String" value="Mostrar Clientes"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mostrarClientesActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMostrarClientesActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="salir">
+    <Component class="javax.swing.JButton" name="btnSalir">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="0" red="66" type="rgb"/>
@@ -225,17 +225,17 @@
         <Property name="text" type="java.lang.String" value="Salir"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="salirActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSalirActionPerformed"/>
       </Events>
     </Component>
-    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+    <Container class="javax.swing.JScrollPane" name="jSpResultado">
       <AuxValues>
         <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
       </AuxValues>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTextPane" name="resultado">
+        <Component class="javax.swing.JTextPane" name="txtResultado">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -253,7 +253,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="salir1">
+    <Component class="javax.swing.JButton" name="btnLimpiar">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Source Serif Pro Semibold" size="18" style="0"/>
@@ -264,7 +264,7 @@
         <Property name="text" type="java.lang.String" value="Limpiar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="salir1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLimpiarActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

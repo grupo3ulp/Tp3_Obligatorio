@@ -18,119 +18,119 @@ public class GuiMainFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        agregarCliente = new javax.swing.JButton();
-        buscarCliente = new javax.swing.JButton();
-        buscarTel = new javax.swing.JButton();
-        buscarClientes = new javax.swing.JButton();
-        borrarCliente = new javax.swing.JButton();
-        mostrarClientes = new javax.swing.JButton();
-        salir = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        resultado = new javax.swing.JTextPane();
-        salir1 = new javax.swing.JButton();
+        mainPanel = new javax.swing.JPanel();
+        jLTiitulo = new javax.swing.JLabel();
+        btnAgregarCliente = new javax.swing.JButton();
+        btnBuscarCliente = new javax.swing.JButton();
+        btnBuscarTel = new javax.swing.JButton();
+        btnBuscarClientes = new javax.swing.JButton();
+        btnBorrarCliente = new javax.swing.JButton();
+        btnMostrarClientes = new javax.swing.JButton();
+        btnSalir = new javax.swing.JButton();
+        jSpResultado = new javax.swing.JScrollPane();
+        txtResultado = new javax.swing.JTextPane();
+        btnLimpiar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Source Serif Pro Semibold", 1, 48)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\Documentos\\ULP\\2do Cuatrimestre\\Laboratorio 1\\Proyectos\\Tp3_Obligatorio\\img\\book-solid.png")); // NOI18N
-        jLabel1.setText("Directorio de clientes");
+        jLTiitulo.setFont(new java.awt.Font("Source Serif Pro Semibold", 1, 48)); // NOI18N
+        jLTiitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLTiitulo.setIcon(new javax.swing.ImageIcon("D:\\Documentos\\ULP\\2do Cuatrimestre\\Laboratorio 1\\Proyectos\\Tp3_Obligatorio\\img\\book-solid.png")); // NOI18N
+        jLTiitulo.setText("Directorio de clientes");
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
+        mainPanel.setLayout(mainPanelLayout);
+        mainPanelLayout.setHorizontalGroup(
+            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPanelLayout.createSequentialGroup()
                 .addContainerGap(97, Short.MAX_VALUE)
-                .addComponent(jLabel1)
+                .addComponent(jLTiitulo)
                 .addGap(58, 58, 58))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+        mainPanelLayout.setVerticalGroup(
+            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mainPanelLayout.createSequentialGroup()
+                .addComponent(jLTiitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 12, Short.MAX_VALUE))
         );
 
-        agregarCliente.setFont(new java.awt.Font("Source Serif Pro Semibold", 0, 18)); // NOI18N
-        agregarCliente.setIcon(new javax.swing.ImageIcon("D:\\Documentos\\ULP\\2do Cuatrimestre\\Laboratorio 1\\Proyectos\\Tp3_Obligatorio\\img\\square-plus-solid.png")); // NOI18N
-        agregarCliente.setText("Agregar Cliente");
-        agregarCliente.addActionListener(new java.awt.event.ActionListener() {
+        btnAgregarCliente.setFont(new java.awt.Font("Source Serif Pro Semibold", 0, 18)); // NOI18N
+        btnAgregarCliente.setIcon(new javax.swing.ImageIcon("D:\\Documentos\\ULP\\2do Cuatrimestre\\Laboratorio 1\\Proyectos\\Tp3_Obligatorio\\img\\square-plus-solid.png")); // NOI18N
+        btnAgregarCliente.setText("Agregar Cliente");
+        btnAgregarCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                agregarClienteActionPerformed(evt);
+                btnAgregarClienteActionPerformed(evt);
             }
         });
 
-        buscarCliente.setFont(new java.awt.Font("Source Serif Pro Semibold", 0, 18)); // NOI18N
-        buscarCliente.setIcon(new javax.swing.ImageIcon("D:\\Documentos\\ULP\\2do Cuatrimestre\\Laboratorio 1\\Proyectos\\Tp3_Obligatorio\\img\\buscarCliente.png")); // NOI18N
-        buscarCliente.setText("Buscar Cliente");
-        buscarCliente.addActionListener(new java.awt.event.ActionListener() {
+        btnBuscarCliente.setFont(new java.awt.Font("Source Serif Pro Semibold", 0, 18)); // NOI18N
+        btnBuscarCliente.setIcon(new javax.swing.ImageIcon("D:\\Documentos\\ULP\\2do Cuatrimestre\\Laboratorio 1\\Proyectos\\Tp3_Obligatorio\\img\\buscarCliente.png")); // NOI18N
+        btnBuscarCliente.setText("Buscar Cliente");
+        btnBuscarCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buscarClienteActionPerformed(evt);
+                btnBuscarClienteActionPerformed(evt);
             }
         });
 
-        buscarTel.setFont(new java.awt.Font("Source Serif Pro Semibold", 0, 18)); // NOI18N
-        buscarTel.setIcon(new javax.swing.ImageIcon("D:\\Documentos\\ULP\\2do Cuatrimestre\\Laboratorio 1\\Proyectos\\Tp3_Obligatorio\\img\\buscarTelefono.png")); // NOI18N
-        buscarTel.setText("Buscar Telefono");
-        buscarTel.addActionListener(new java.awt.event.ActionListener() {
+        btnBuscarTel.setFont(new java.awt.Font("Source Serif Pro Semibold", 0, 18)); // NOI18N
+        btnBuscarTel.setIcon(new javax.swing.ImageIcon("D:\\Documentos\\ULP\\2do Cuatrimestre\\Laboratorio 1\\Proyectos\\Tp3_Obligatorio\\img\\buscarTelefono.png")); // NOI18N
+        btnBuscarTel.setText("Buscar Telefono");
+        btnBuscarTel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buscarTelActionPerformed(evt);
+                btnBuscarTelActionPerformed(evt);
             }
         });
 
-        buscarClientes.setFont(new java.awt.Font("Source Serif Pro Semibold", 0, 18)); // NOI18N
-        buscarClientes.setIcon(new javax.swing.ImageIcon("D:\\Documentos\\ULP\\2do Cuatrimestre\\Laboratorio 1\\Proyectos\\Tp3_Obligatorio\\img\\buscarClientes.png")); // NOI18N
-        buscarClientes.setText("Buscar Clientes");
-        buscarClientes.addActionListener(new java.awt.event.ActionListener() {
+        btnBuscarClientes.setFont(new java.awt.Font("Source Serif Pro Semibold", 0, 18)); // NOI18N
+        btnBuscarClientes.setIcon(new javax.swing.ImageIcon("D:\\Documentos\\ULP\\2do Cuatrimestre\\Laboratorio 1\\Proyectos\\Tp3_Obligatorio\\img\\buscarClientes.png")); // NOI18N
+        btnBuscarClientes.setText("Buscar Clientes");
+        btnBuscarClientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buscarClientesActionPerformed(evt);
+                btnBuscarClientesActionPerformed(evt);
             }
         });
 
-        borrarCliente.setFont(new java.awt.Font("Source Serif Pro Semibold", 0, 18)); // NOI18N
-        borrarCliente.setIcon(new javax.swing.ImageIcon("D:\\Documentos\\ULP\\2do Cuatrimestre\\Laboratorio 1\\Proyectos\\Tp3_Obligatorio\\img\\trash-can-solid.png")); // NOI18N
-        borrarCliente.setText("Borrar Cliente");
-        borrarCliente.addActionListener(new java.awt.event.ActionListener() {
+        btnBorrarCliente.setFont(new java.awt.Font("Source Serif Pro Semibold", 0, 18)); // NOI18N
+        btnBorrarCliente.setIcon(new javax.swing.ImageIcon("D:\\Documentos\\ULP\\2do Cuatrimestre\\Laboratorio 1\\Proyectos\\Tp3_Obligatorio\\img\\trash-can-solid.png")); // NOI18N
+        btnBorrarCliente.setText("Borrar Cliente");
+        btnBorrarCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                borrarClienteActionPerformed(evt);
+                btnBorrarClienteActionPerformed(evt);
             }
         });
 
-        mostrarClientes.setFont(new java.awt.Font("Source Serif Pro Semibold", 0, 18)); // NOI18N
-        mostrarClientes.setIcon(new javax.swing.ImageIcon("D:\\Documentos\\ULP\\2do Cuatrimestre\\Laboratorio 1\\Proyectos\\Tp3_Obligatorio\\img\\address-book-solid.png")); // NOI18N
-        mostrarClientes.setText("Mostrar Clientes");
-        mostrarClientes.addActionListener(new java.awt.event.ActionListener() {
+        btnMostrarClientes.setFont(new java.awt.Font("Source Serif Pro Semibold", 0, 18)); // NOI18N
+        btnMostrarClientes.setIcon(new javax.swing.ImageIcon("D:\\Documentos\\ULP\\2do Cuatrimestre\\Laboratorio 1\\Proyectos\\Tp3_Obligatorio\\img\\address-book-solid.png")); // NOI18N
+        btnMostrarClientes.setText("Mostrar Clientes");
+        btnMostrarClientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mostrarClientesActionPerformed(evt);
+                btnMostrarClientesActionPerformed(evt);
             }
         });
 
-        salir.setBackground(new java.awt.Color(102, 0, 0));
-        salir.setFont(new java.awt.Font("Source Serif Pro Semibold", 0, 18)); // NOI18N
-        salir.setForeground(new java.awt.Color(255, 255, 255));
-        salir.setIcon(new javax.swing.ImageIcon("D:\\Documentos\\ULP\\2do Cuatrimestre\\Laboratorio 1\\Proyectos\\Tp3_Obligatorio\\img\\door-open-solid.png")); // NOI18N
-        salir.setText("Salir");
-        salir.addActionListener(new java.awt.event.ActionListener() {
+        btnSalir.setBackground(new java.awt.Color(102, 0, 0));
+        btnSalir.setFont(new java.awt.Font("Source Serif Pro Semibold", 0, 18)); // NOI18N
+        btnSalir.setForeground(new java.awt.Color(255, 255, 255));
+        btnSalir.setIcon(new javax.swing.ImageIcon("D:\\Documentos\\ULP\\2do Cuatrimestre\\Laboratorio 1\\Proyectos\\Tp3_Obligatorio\\img\\door-open-solid.png")); // NOI18N
+        btnSalir.setText("Salir");
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                salirActionPerformed(evt);
+                btnSalirActionPerformed(evt);
             }
         });
 
-        resultado.setEditable(false);
-        resultado.setBackground(new java.awt.Color(204, 204, 204));
-        resultado.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        resultado.setFont(new java.awt.Font("Source Code Pro Medium", 0, 14)); // NOI18N
-        jScrollPane1.setViewportView(resultado);
+        txtResultado.setEditable(false);
+        txtResultado.setBackground(new java.awt.Color(204, 204, 204));
+        txtResultado.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtResultado.setFont(new java.awt.Font("Source Code Pro Medium", 0, 14)); // NOI18N
+        jSpResultado.setViewportView(txtResultado);
 
-        salir1.setFont(new java.awt.Font("Source Serif Pro Semibold", 0, 18)); // NOI18N
-        salir1.setIcon(new javax.swing.ImageIcon("D:\\Documentos\\ULP\\2do Cuatrimestre\\Laboratorio 1\\Proyectos\\Tp3_Obligatorio\\img\\broom-solid.png")); // NOI18N
-        salir1.setText("Limpiar");
-        salir1.addActionListener(new java.awt.event.ActionListener() {
+        btnLimpiar.setFont(new java.awt.Font("Source Serif Pro Semibold", 0, 18)); // NOI18N
+        btnLimpiar.setIcon(new javax.swing.ImageIcon("D:\\Documentos\\ULP\\2do Cuatrimestre\\Laboratorio 1\\Proyectos\\Tp3_Obligatorio\\img\\broom-solid.png")); // NOI18N
+        btnLimpiar.setText("Limpiar");
+        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                salir1ActionPerformed(evt);
+                btnLimpiarActionPerformed(evt);
             }
         });
 
@@ -139,67 +139,67 @@ public class GuiMainFrame extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(0, 20, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(salir, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(agregarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(borrarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buscarClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buscarTel, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buscarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(mostrarClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnAgregarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnBorrarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnBuscarClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnBuscarTel, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnBuscarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnMostrarClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(30, 30, 30)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 368, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jSpResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 368, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(91, 91, 91)
-                        .addComponent(salir1, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(20, Short.MAX_VALUE)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1)
+                        .addComponent(jSpResultado)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(agregarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnAgregarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(26, 26, 26)
-                        .addComponent(buscarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnBuscarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(27, 27, 27)
-                        .addComponent(buscarTel, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnBuscarTel, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(26, 26, 26)
-                        .addComponent(buscarClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnBuscarClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(26, 26, 26)
-                        .addComponent(borrarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnBorrarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
-                        .addComponent(mostrarClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnMostrarClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(22, 22, 22)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(salir1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(salir, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(18, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void agregarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarClienteActionPerformed
+    private void btnAgregarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarClienteActionPerformed
         GuiAgregarCliente agregar = new GuiAgregarCliente();
         agregar.setVisible(true);
         agregar.setLocationRelativeTo(null);
         dispose();
-    }//GEN-LAST:event_agregarClienteActionPerformed
+    }//GEN-LAST:event_btnAgregarClienteActionPerformed
 
-    private void buscarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscarClienteActionPerformed
+    private void btnBuscarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarClienteActionPerformed
         String mostrar = "";
         Cliente aux = Main.getDir().buscarCliente();
         if (aux != null) {
@@ -208,10 +208,10 @@ public class GuiMainFrame extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "El numero ingresado"
                     + " no se encuentra asociado a ningun cliente");
         }
-        resultado.setText(mostrar);
-    }//GEN-LAST:event_buscarClienteActionPerformed
+        txtResultado.setText(mostrar);
+    }//GEN-LAST:event_btnBuscarClienteActionPerformed
 
-    private void salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirActionPerformed
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
         if((JOptionPane.showConfirmDialog(null, "Realmente "
                 + "desea salir?", "Confirmar salida",
                 JOptionPane.YES_NO_OPTION,
@@ -219,9 +219,9 @@ public class GuiMainFrame extends javax.swing.JFrame {
         System.exit(0);
         }
         
-    }//GEN-LAST:event_salirActionPerformed
+    }//GEN-LAST:event_btnSalirActionPerformed
 
-    private void buscarTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscarTelActionPerformed
+    private void btnBuscarTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarTelActionPerformed
         String mostrar = "";
         ArrayList<String> auxList = Main.getDir().buscarTelefono();
         if (!auxList.isEmpty()) {
@@ -232,21 +232,21 @@ public class GuiMainFrame extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "No se econtraron "
                     + "clientes con ese apellido");
         }
-        resultado.setText(mostrar);
+        txtResultado.setText(mostrar);
 
-    }//GEN-LAST:event_buscarTelActionPerformed
+    }//GEN-LAST:event_btnBuscarTelActionPerformed
 
-    private void mostrarClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mostrarClientesActionPerformed
+    private void btnMostrarClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMostrarClientesActionPerformed
         String mostrar = "";
         for (Map.Entry<String, Cliente> entry : Main.getDir().getDIRECTORIO().entrySet()) {
             Object key = entry.getKey();
             Object value = entry.getValue();
             mostrar += value + "Tel: " + key + "\n" + "------------------------" + "\n";
         }        // TODO add your handling code here:
-        resultado.setText(mostrar);
-    }//GEN-LAST:event_mostrarClientesActionPerformed
+        txtResultado.setText(mostrar);
+    }//GEN-LAST:event_btnMostrarClientesActionPerformed
 
-    private void buscarClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscarClientesActionPerformed
+    private void btnBuscarClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarClientesActionPerformed
         TreeSet<Cliente> auxSet = Main.getDir().buscarClientes();
         String mostrar = "";
         if (!auxSet.isEmpty()) {
@@ -257,30 +257,30 @@ public class GuiMainFrame extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "No se econtraron "
                     + "clientes con radicados en esa ciudad");
         }
-        resultado.setText(mostrar);
-    }//GEN-LAST:event_buscarClientesActionPerformed
+        txtResultado.setText(mostrar);
+    }//GEN-LAST:event_btnBuscarClientesActionPerformed
 
-    private void borrarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_borrarClienteActionPerformed
+    private void btnBorrarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarClienteActionPerformed
         Main.getDir().borrarCliente();
-    }//GEN-LAST:event_borrarClienteActionPerformed
+    }//GEN-LAST:event_btnBorrarClienteActionPerformed
 
-    private void salir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salir1ActionPerformed
-         resultado.setText("");
-    }//GEN-LAST:event_salir1ActionPerformed
+    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
+         txtResultado.setText("");
+    }//GEN-LAST:event_btnLimpiarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton agregarCliente;
-    private javax.swing.JButton borrarCliente;
-    private javax.swing.JButton buscarCliente;
-    private javax.swing.JButton buscarClientes;
-    private javax.swing.JButton buscarTel;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JButton mostrarClientes;
-    private javax.swing.JTextPane resultado;
-    private javax.swing.JButton salir;
-    private javax.swing.JButton salir1;
+    private javax.swing.JButton btnAgregarCliente;
+    private javax.swing.JButton btnBorrarCliente;
+    private javax.swing.JButton btnBuscarCliente;
+    private javax.swing.JButton btnBuscarClientes;
+    private javax.swing.JButton btnBuscarTel;
+    private javax.swing.JButton btnLimpiar;
+    private javax.swing.JButton btnMostrarClientes;
+    private javax.swing.JButton btnSalir;
+    private javax.swing.JLabel jLTiitulo;
+    private javax.swing.JScrollPane jSpResultado;
+    private javax.swing.JPanel mainPanel;
+    private javax.swing.JTextPane txtResultado;
     // End of variables declaration//GEN-END:variables
 }
