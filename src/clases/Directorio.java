@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeSet;
 import javax.swing.JOptionPane;
+import main.Main;
 
 public class Directorio {
 
@@ -82,7 +83,13 @@ public class Directorio {
         } 
     }
 
-    public void mostrarCliente() {
-        DIRECTORIO.forEach((k, v) -> System.out.println(v + "\n Telefono: " + k));
+    public String mostrarCliente() {
+        String mostrar="";
+         for (Map.Entry<String, Cliente> entry : Main.getDir().getDIRECTORIO().entrySet()) {
+            Object key = entry.getKey();
+            Object value = entry.getValue();
+            mostrar += value + "Tel: " + key + "\n" + "------------------------" + "\n";
+        }   
+         return mostrar;
     }
 }
