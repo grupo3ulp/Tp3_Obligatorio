@@ -237,13 +237,7 @@ public class GuiMainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBuscarTelActionPerformed
 
     private void btnMostrarClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMostrarClientesActionPerformed
-        String mostrar = "";
-        for (Map.Entry<String, Cliente> entry : Main.getDir().getDIRECTORIO().entrySet()) {
-            Object key = entry.getKey();
-            Object value = entry.getValue();
-            mostrar += value + "Tel: " + key + "\n" + "------------------------" + "\n";
-        }        // TODO add your handling code here:
-        txtResultado.setText(mostrar);
+        txtResultado.setText(Main.getDir().mostrarCliente());
     }//GEN-LAST:event_btnMostrarClientesActionPerformed
 
     private void btnBuscarClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarClientesActionPerformed
@@ -267,7 +261,6 @@ public class GuiMainFrame extends javax.swing.JFrame {
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
          txtResultado.setText("");
     }//GEN-LAST:event_btnLimpiarActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAgregarCliente;

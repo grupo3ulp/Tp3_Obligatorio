@@ -222,6 +222,7 @@ public class GuiAgregarCliente extends javax.swing.JFrame {
             super.processKeyEvent(ev);
         }
         ev.consume();
+        
         return;
     }
 
@@ -230,6 +231,7 @@ public class GuiAgregarCliente extends javax.swing.JFrame {
                     txtApellido.getText(), txtCiudad.getText(), txtDireccion.getText());
             if (flag) {
                 JOptionPane.showMessageDialog(null, "Cliente agregado corectamente");
+                btnGuardar.setEnabled(false);
             } else {
                 JOptionPane.showMessageDialog(null, "No se pudo "
                         + "agregar al cliente por que ya existe uno con ese numero de telefono");
@@ -302,6 +304,9 @@ public class GuiAgregarCliente extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Solo se pueden ingresar numeros en "
                     + "este campo");
         }
+        if (txtDni.getText().length()>9) {
+            evt.consume();
+        }
     }//GEN-LAST:event_txtDniKeyTyped
 
     private void txtTelefonoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTelefonoKeyTyped
@@ -311,6 +316,9 @@ public class GuiAgregarCliente extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Solo se pueden ingresar numeros en "
                     + "este campo");
             txtTelefono.setText(" ");
+        }
+         if (txtTelefono.getText().length()>15) {
+            evt.consume();
         }
     }//GEN-LAST:event_txtTelefonoKeyTyped
 
