@@ -256,12 +256,12 @@ public class GuiAgregarCliente extends javax.swing.JFrame {
         }
     }
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
-        txtNombre.setText(" ");
-        txtApellido.setText(" ");
-        txtDni.setText(" ");
-        txtDireccion.setText(" ");
-        txtCiudad.setText(" ");
-        txtTelefono.setText(" ");
+        txtNombre.setText("");
+        txtApellido.setText("");
+        txtDni.setText("");
+        txtDireccion.setText("");
+        txtCiudad.setText("");
+        txtTelefono.setText("");
 
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
